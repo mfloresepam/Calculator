@@ -8,7 +8,11 @@ public class App {
 
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
+
+        System.out.println("This is a calculator APP.");
+
         Scanner scanner = new Scanner(System.in);
+
 
         System.out.println("Please insert your first operand");
 
