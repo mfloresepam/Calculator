@@ -1,20 +1,21 @@
 package com.elvermg.calcmentor.services;
 
+import java.math.BigInteger;
+
 public class Calculator {
-    public int performOperation(String firstOperand, String operation, String secondOperand) {
-        int first = Integer.parseInt(firstOperand);
-        int second = Integer.parseInt(secondOperand);
+    public BigInteger performOperation(BigInteger firstOperand, String operation, BigInteger secondOperand) {
+
         switch (operation) {
             case "+":
-                return first + second;
+                return firstOperand.add(secondOperand);
             case "-":
-                return first - second;
+                return firstOperand.subtract(secondOperand);
             case "/":
-                return first / second;
+                return firstOperand.divide(secondOperand);
             case "*":
-                return first * second;
+                return firstOperand.multiply(secondOperand);
             default:
-                return 0;
+                return BigInteger.valueOf(0);
         }
     }
 }
