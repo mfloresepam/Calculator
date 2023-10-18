@@ -15,13 +15,19 @@ public class App {
 
         BigInteger firstOperand = scanner.nextBigInteger();
 
+        System.out.println("The number inserted for first operand is: " + firstOperand);
+
         System.out.println("Please insert the operation symbol: (* / + -)");
 
         String operation = scanner.next();
 
+        System.out.println("The operation to perform is " + operation);
+
         System.out.println("Please insert your second operand");
 
         BigInteger secondOperand = scanner.nextBigInteger();
+
+        System.out.println("The number inserted for second operand is: " + firstOperand);
 
         System.out.println("Result is: " + calculator.performOperation(firstOperand, operation, secondOperand));
     }

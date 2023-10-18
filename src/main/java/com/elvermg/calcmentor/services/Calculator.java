@@ -5,6 +5,8 @@ import java.math.BigInteger;
 public class Calculator {
     public BigInteger performOperation(BigInteger firstOperand, String operation, BigInteger secondOperand) {
 
+        System.out.println("Selecting operation based on symbol: " + operation  );
+
         switch (operation) {
             case "+":
                 return firstOperand.add(secondOperand);
