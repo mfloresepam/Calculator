@@ -2,6 +2,7 @@ package com.elvermg.calcmentor;
 
 import com.elvermg.calcmentor.services.Calculator;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class App {
@@ -12,7 +13,7 @@ public class App {
 
         System.out.println("Please insert your first operand");
 
-        String firstOperand = scanner.next();
+        BigInteger firstOperand = scanner.nextBigInteger();
 
         System.out.println("Please insert the operation symbol: (* / + -)");
 
@@ -20,7 +21,7 @@ public class App {
 
         System.out.println("Please insert your second operand");
 
-        String secondOperand = scanner.next();
+        BigInteger secondOperand = scanner.nextBigInteger();
 
         System.out.println("Result is: " + calculator.performOperation(firstOperand, operation, secondOperand));
     }
